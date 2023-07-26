@@ -4,12 +4,13 @@ import store from "../utils/store";
 import { YOUTUBE_SEARCH_SUGGESTION_API } from "../constant";
 import { cacheResult } from "../utils/searchSlice";
 
-const SearchSuggest = ({ searchQuery }) => {
+const SearchSuggest = ({ searchQuery, triggerSearch }) => {
   const [searchSuggestion, setSearchSuggestion] = useState([]);
 
   const searchCache = useSelector((store) => store.search);
 
   const dispatch = useDispatch();
+
  
   useEffect(() => {
     // API call
@@ -49,6 +50,7 @@ const SearchSuggest = ({ searchQuery }) => {
           <li
             key={suggest}
             className=" p-[2px] px-5 cursor-pointer hover:bg-gray-200 rounded-lg"
+            onMouseDown={(e)=>triggerSearch(e)}
           >
             {suggest}
           </li>

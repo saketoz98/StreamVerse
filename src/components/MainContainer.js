@@ -7,13 +7,8 @@ import classNames from 'classnames';
 const MainContainer = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
-  const mainContainerClasses = classNames('w-full', {
-    'lg:col-span-12': !isMenuOpen,
-    'lg:col-span-10': isMenuOpen,
-  });
-
   return (
-	<div className={mainContainerClasses}>
+	<div className="px-3 col-span-11">
     <ButtonList/>
     <VideoContainer/>
   </div>

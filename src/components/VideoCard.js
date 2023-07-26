@@ -25,6 +25,12 @@ const VideoCard = ({ videoInfo }) => {
     }
   }
 
+  const getRandomNumberViews = ()=>{
+    // Generate a random number between 1 and 9 (inclusive)
+    const num = Math.floor(Math.random() * 9) + 1;
+    return num.toString() + "M Views";
+  }
+
   return (
     <div className={videoCardStyle}>
       <Link to={"/watch?v=" + videoInfo.id}>
@@ -38,7 +44,7 @@ const VideoCard = ({ videoInfo }) => {
       <div className=" font-semibold pt-2 text-md">{title}</div>
       <div className="flex flex-col">
         <div className="text-sm">{channelTitle}</div>
-        <div className="text-sm">{convertViewCount(statistics.viewCount)} Views</div>
+        <div className="text-sm">{statistics ? convertViewCount(statistics.viewCount) : getRandomNumberViews()} Views</div>
       </div>
       
     </div>
