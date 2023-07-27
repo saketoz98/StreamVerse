@@ -8,8 +8,10 @@ const ChatMessage = ({name, message}) => {
         alt="profile"
         className="w-8 h-8 rounded-full"
       />
-      <span className="px-2 font-bold">{name}:</span>
-      <span className="">{message}</span>
+      <div className="flex flex-col">
+        <div className="px-2 font-bold">{name}</div>
+        <div className="px-2 text-sm">{message}</div>
+      </div>
     </div>
   );
 };

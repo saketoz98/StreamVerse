@@ -26,11 +26,11 @@ const VideoDetails = ({currVideoDetails}) => {
             
         </div>
         <div className="w-2/12 flex my-3 items-center justify-between">
-            <div className="flex items-center">
+            <div className="flex items-center ">
                 <img src="like.png" className="w-6 h-6 mx-2" /> 
                 <div>{convertViewCount(likeCount)}</div>
             </div>
-            <div className="flex items-center mr-1">
+            <div className="flex items-center mr-1 ">
                 <img src="view.png" className="w-6 h-6 mx-2" /> 
                 <div>{convertViewCount(viewCount)}</div>
             </div>

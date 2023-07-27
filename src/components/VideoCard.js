@@ -10,7 +10,7 @@ const VideoCard = ({ videoInfo }) => {
   const { snippet, statistics } = videoInfo;
   const { channelTitle, title, thumbnails } = snippet;
 
-  const videoCardStyle = classNames('m-2 p-3 overflow-hidden rounded-sm space-y-1 shadow-xl', {
+  const videoCardStyle = classNames('m-2 p-3 overflow-hidden rounded-sm space-y-1 shadow-md', {
     'w-60': !isMenuOpen,
     'w-72': isMenuOpen,
   });
@@ -41,7 +41,7 @@ const VideoCard = ({ videoInfo }) => {
       />
       </Link>
 
-      <div className=" font-semibold pt-2 text-md">{title}</div>
+      <div className="font-semibold pt-2 text-md">{title}</div>
       <div className="flex flex-col">
         <div className="text-sm">{channelTitle}</div>
         <div className="text-sm">{statistics ? convertViewCount(statistics.viewCount) : getRandomNumberViews()} Views</div>

@@ -41,15 +41,10 @@ import sendFeedbackIcon from '../assets/icons/sendFeedback.svg';
 const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
-  const sideBarItemNames = [{sidebarName: "Home", sidebarLink: "/"}, 
-    {sidebarName: "Shorts", sidebarLink: "/"},
-    {sidebarName: "Subscriptions", sidebarLink: "/"},
-    {sidebarName: "Library", sidebarLink: "/"},
-  ]
+  
 
   return !isMenuOpen? null : (
-    <div className="p-5 col-span-1 max-h-screen hover:overflow-y-scroll overflow-hidden overscroll-contain sticky top-[64px] z-50 bg-white shadow-xl">
-      {/* {sideBarItemNames.map((item) => (<SideBarItem sideBarItem={item} />))} */}
+    <div className="p-5 col-span-1 max-h-screen hover:overflow-y-scroll overflow-hidden overscroll-contain sticky top-[64px] z-50 bg-white ">
       <ul>
         <li className='my-1 p-1 py-2 hover:bg-gray-100 cursor-pointer rounded-lg'><NavLink  to='/'> <img className='inline-block align-bottom mr-3' src={homeIcon} alt="Home" /> Home</NavLink ></li>
         <li className='my-1 p-1 py-2 hover:bg-gray-100 cursor-pointer rounded-lg'><NavLink  to={'/'}> <img className='inline-block align-bottom mr-3' src={shortsIcon} alt="Shorts" /> Shorts</NavLink ></li>

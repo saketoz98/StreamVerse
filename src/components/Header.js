@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { setSearchInput, toggleMenu, setVideoList } from "../utils/appSlice";
 import SearchSuggest from "./SearchSuggest";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import { YOUTUBE_SEARCH_VIDEO_WITH_QUERY_API } from "../constant";
 
 const Header = () => {
@@ -11,7 +10,6 @@ const Header = () => {
   const [showSuggestion, setShowSuggestion] = useState(false);
 
   const dispatch = useDispatch();
-  let navigate = useNavigate();
 
   const handleToggleMenu = () => {
     dispatch(toggleMenu());
@@ -37,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-white">
+    <div className="sticky top-0 pb-2 z-50 bg-white">
       <div className="flex flex-row justify-between items-center px-4 py-3">
         <div className="flex flex-row items-center ">
           <div className="flex flex-row items-center">

@@ -30,7 +30,7 @@ const ButtonList = () => {
   return (
     <div className="flex sticky top-[64px] z-40 bg-white pb-2">
       <button onClick={prev} className='hover:rounded-full w-10 h-10 mr-2 hover:bg-gray-100 fixed z-50'><img alt='leftScrollBtn' className='inline-block' src={leftScrollIcon} /></button>
-      <div ref={scrollRef} className='max-w-[85%] overflow-x-hidden flex mx-12'>
+      <div ref={scrollRef} className='max-w-[86%] overflow-x-hidden flex mx-12'>
         {
           buttonList.map((btnName, index) => {
             return <Button key={index} name={btnName} />
