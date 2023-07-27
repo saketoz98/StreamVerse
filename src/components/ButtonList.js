@@ -7,7 +7,7 @@ import rightScrollIcon from '../assets/icons/right-scroll.svg';
 const ButtonList = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
-  const buttonList = ['All', 'Gaming', 'Songs', 'Live', 'Cricket', 'News', 'Bollywood', 'Computer', 'Scene', 'Mixes', 'History', 'programming', 'Hollywood']
+  const buttonList = ['All', 'Gaming', 'Songs', 'Live', 'Cricket', 'News', 'Bollywood', 'Computer', 'Scene', 'Mixes', 'History', 'programming', 'Hollywood', 'Football', "Cooking", "Basketball", "Universities", "Advertisements"]
   
   const scrollRef = useRef(null);
 

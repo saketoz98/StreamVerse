@@ -46,20 +46,21 @@ const LiveChat = () => {
   return (
     <>
       <div
-        className="ml-2 p-2 sm:h-[200px] md:h-[400px]
-     lg:h-[585px] px-2 mx-5 my-4 border border-black bg-slate-50 overflow-y-scroll flex flex-col-reverse"
+        className="ml-2 p-2  px-2 mx-5 my-4 border border-black bg-slate-50  rounded-lg"
       >
-        <div>
+        <div className='h-[40px] p-2 m-2 text' >Top Chat</div>
+        <div className="sm:h-[200px] md:h-[300px]
+     lg:h-[510px] overflow-y-scroll flex flex-col-reverse">
           {" "}
           {messages.map((message, idx) => (
             <ChatMessage key={idx} name={message.name} message={message.message} />
           ))}
         </div>
       </div>
-      <div className="ml-2 p-2 px-2 mx-5 border border-black bg-slate-50 flex justify-between">
+      <div className="ml-2 p-2 px-2 mx-5 border border-black bg-slate-50 flex justify-between rounded-md">
         <input
           type="text"
-          placeholder="Type a message"
+          placeholder="Chat..."
           className="w-full py-1 px-2"
           onChange={(e) => {
             setLiveMessage(e.target.value);

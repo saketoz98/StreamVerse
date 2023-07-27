@@ -1,30 +1,31 @@
 import React from 'react'
 import CommentsList from './CommentsList';
+import { generateRandomCommentMessage } from '../utils/utils';
 
 const commentsData = [
     {
         name: 'Saket Ozarkar',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        text: generateRandomCommentMessage(),
         replies: []
     },
     {
-        name: 'Suhas Khulpe',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        name: 'Jane Doe',
+        text: generateRandomCommentMessage(),
         replies: [{
-            name: 'Suhas Khulpe',
-            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+            name: 'Robert Downey Jr.',
+            text: generateRandomCommentMessage(),
             replies: [{
-                name: 'Suhas Khulpe',
-                text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+                name: 'Rober Kiyosaki',
+                text: generateRandomCommentMessage(),
                 replies: [{
-                    name: 'Suhas Khulpe',
-                    text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+                    name: 'Lebron James',
+                    text: generateRandomCommentMessage(),
                     replies: [{
-                        name: 'Suhas Khulpe',
-                        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+                        name: 'Joe Biden',
+                        text: generateRandomCommentMessage(),
                         replies: [{
-                            name: 'Suhas Khulpe',
-                            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+                            name: 'James Anderson',
+                            text: generateRandomCommentMessage(),
                             replies: []
                         },]
                     },]
@@ -33,53 +34,53 @@ const commentsData = [
         },]
     },
     {
-        name: 'Suhas Khulpe',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        name: 'Roger Federer',
+        text: generateRandomCommentMessage(),
         replies: [{
-            name: 'Suhas Khulpe',
-            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+            name: 'Lisa Su',
+            text: generateRandomCommentMessage(),
             replies: []
         },]
     },
     {
-        name: 'Suhas Khulpe',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        name: 'Peter Parker',
+        text: generateRandomCommentMessage(),
         replies: [{
-            name: 'Suhas Khulpe',
-            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+            name: 'Peter Paterson',
+            text: generateRandomCommentMessage(),
             replies: []
         },]
     },
     {
-        name: 'Suhas Khulpe',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        name: 'Logan Paul',
+        text: generateRandomCommentMessage(),
         replies: [{
-            name: 'Suhas Khulpe',
-            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+            name: 'Pink Panther',
+            text: generateRandomCommentMessage(),
             replies: []
         },]
     },
     {
-        name: 'Suhas Khulpe',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        name: 'Loris Karius',
+        text: generateRandomCommentMessage(),
         replies: [{
-            name: 'Suhas Khulpe',
-            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+            name: 'Ben Haggerty',
+            text: generateRandomCommentMessage(),
             replies: []
         },]
     },
     {
-        name: 'Suhas Khulpe',
-        text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+        name: 'Raymond Reddington',
+        text: generateRandomCommentMessage(),
         replies: [{
-            name: 'Suhas Khulpe',
-            text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+            name: 'Raheem Sterling',
+            text: generateRandomCommentMessage(),
             replies: [{
-                name: 'Suhas Khulpe',
-                text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+                name: 'Nelson Mandela',
+                text: generateRandomCommentMessage(),
                 replies: [{
-                    name: 'Suhas Khulpe',
-                    text: 'I am a fresher and I am able to answer 90% questions, feeling confident',
+                    name: 'Louis Hamilton',
+                    text: generateRandomCommentMessage(),
                     replies: []
                 },]
             },]
