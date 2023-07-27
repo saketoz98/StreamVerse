@@ -3,7 +3,7 @@ import ChatMessage from "./ChatMessage";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "../utils/chatSlice";
 import { v4 as uuidv4 } from 'uuid';
-import { createRandomMessage } from "../utils/utils";
+import { createRandomMessage, generateRandomMessage } from "../utils/utils";
 
 const LiveChat = () => {
   const [liveMessage, setLiveMessage] = React.useState("");
@@ -15,8 +15,8 @@ const LiveChat = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       //API Polling
-      dispatch(addMessage({ name: "Saket Ozarkar", message: "Hello World!!" }));
-    }, 3000);
+      dispatch(addMessage(generateRandomMessage()));
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
